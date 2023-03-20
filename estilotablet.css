@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+*  {margin: 0px;
+    padding: 0px; }
+
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+    
+    
+    :root{ --font1: Verdana, Geneva, Tahoma, sans-serif;
+           --font2:'Passione One', cursive;
+           --font3:'Sriracha', cursive;}
+
+    @media screen and (min-width:481px) and (max-width:992px){
+
+       header{background-color: black;
+              color:white;
+               text-align: center;
+              padding-bottom: 10%;}
+      
+      
+      
+      Header > h1{padding-top:15%;
+                   font-variant: small-caps;
+                  font-size: 10vw; /**essa medida faz com que o texto se ajuste conforme a largura da tela**/
+                  font-family: var(--font2);
+                  padding-bottom: 15%;
+                  } 
+      
+      
+      
+      header a, footer a{color:white;
+                      font-weight: bolder; }
+      
+      
+      html,body{background-color: ghostwhite;
+                   min-height: 100vh;
+                  font-family: var(--font1);}
+      
+        section{/**essa configuração vale pra duas sections(normal e imagem)**/
+                  padding-top: 10vh;
+                  padding-bottom: 10vh; 
+              /** o proximo comando aumenta o espaço entre as linhas de texto**/
+                 line-height: 2em;
+                /** agora afasta o texto da margem esquerda**/
+                   padding-left: 16%;
+                   font-family: var(--font3);
+                   font-size: 5vw ;
+                 }   
+      
+      
+                 section.imagem > p{ /** o proximo comando cria uma caixa para deixar o texto legível mesmo com uma imagem de fundo**/
+                  background-color: rgba(0, 0 ,0,0,253);
+                  display: inline-block;/**ajusta o tamanho da caixa em relação ao texto**/
+                       padding: 5px;
+                               
+                            }        
+      
+             section.normal{background-color: white;}
+             
+             
+             section.imagem{ background-color: lightslategray;
+                               color: white;
+                               text-shadow: 1px 1px 0px black;
+                               box-shadow: inset 6px 6px 13px 0px black;
+                               background-attachment: fixed;}
+      
+      
+      
+              section#img_01{background-image: url(images/background001.jpg);
+                              background-position: right center;
+                                 background-size: cover;}
+      
+      
+      
+      
+              section#img_02{ background-image: url(images/background002.jpg);
+                                   background-position: right center;
+                                   background-size: cover;
+                                   }
+      
+      
+      
+      
+               section>p{ 
+                            padding-bottom: 2em;
+               }                
+      
+      
+               footer{background-color: black;
+                         color: white;  
+                            padding: 8%;
+                              text-align: center; 
+                             height: 80px;}
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    }      
+
